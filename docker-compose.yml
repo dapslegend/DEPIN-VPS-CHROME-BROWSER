@@ -1,0 +1,162 @@
+version: "3.8"
+
+services:
+  chromium1:
+    image: lscr.io/linuxserver/chromium:latest
+    container_name: chromium_browser_1
+    environment:
+      - PUID=1000  # User ID for file permissions
+      - PGID=1000  # Group ID for file permissions
+      - TZ=Europe/Berlin  # Adjust timezone
+      - CUSTOM_USER=${custom_user}  # Set your own username
+      - PASSWORD=${password}  # Set your password
+      - CHROME_CLI=https://www.google.com  # Optional: Default starting page
+    ports:
+      - "3050:3000"  # Adjust ports if necessary
+      - "3051:3001"
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ~/chromium/config_1:/config  # Config directory for Chromium
+    shm_size: "1gb"  # Prevents crashes by giving the container enough shared memory
+    restart: unless-stopped  # Automatically restart on failures or reboots
+
+  chromium2:
+    image: lscr.io/linuxserver/chromium:latest
+    container_name: chromium_browser_2
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - CUSTOM_USER=${custom_user}
+      - PASSWORD=${password}
+      - CHROME_CLI=https://www.google.com
+    ports:
+      - "3052:3000"
+      - "3053:3001"
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ~/chromium/config_2:/config
+    shm_size: "1gb"
+    restart: unless-stopped
+
+  chromium3:
+    image: lscr.io/linuxserver/chromium:latest
+    container_name: chromium_browser_3
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - CUSTOM_USER=${custom_user}
+      - PASSWORD=${password}
+      - CHROME_CLI=https://www.google.com
+    ports:
+      - "3054:3000"
+      - "3055:3001"
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ~/chromium/config_3:/config
+    shm_size: "1gb"
+    restart: unless-stopped
+
+  chromium4:
+    image: lscr.io/linuxserver/chromium:latest
+    container_name: chromium_browser_4
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - CUSTOM_USER=${custom_user}
+      - PASSWORD=${password}
+      - CHROME_CLI=https://www.google.com
+    ports:
+      - "3056:3000"
+      - "3057:3001"
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ~/chromium/config_4:/config
+    shm_size: "1gb"
+    restart: unless-stopped
+
+  chromium5:
+    image: lscr.io/linuxserver/chromium:latest
+    container_name: chromium_browser_5
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - CUSTOM_USER=${custom_user}
+      - PASSWORD=${password}
+      - CHROME_CLI=https://www.google.com
+    ports:
+      - "3058:3000"
+      - "3059:3001"
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ~/chromium/config_5:/config
+    shm_size: "1gb"
+    restart: unless-stopped
+
+  chromium6:
+    image: lscr.io/linuxserver/chromium:latest
+    container_name: chromium_browser_6
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - CUSTOM_USER=${custom_user}
+      - PASSWORD=${password}
+      - CHROME_CLI=https://www.google.com
+    ports:
+      - "3060:3000"
+      - "3061:3001"
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ~/chromium/config_6:/config
+    shm_size: "1gb"
+    restart: unless-stopped
+
+  chromium7:
+    image: lscr.io/linuxserver/chromium:latest
+    container_name: chromium_browser_7
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - CUSTOM_USER=${custom_user}
+      - PASSWORD=${password}
+      - CHROME_CLI=https://www.google.com
+    ports:
+      - "3062:3000"
+      - "3063:3001"
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ~/chromium/config_7:/config
+    shm_size: "1gb"
+    restart: unless-stopped
+
+  chromium8:
+    image: lscr.io/linuxserver/chromium:latest
+    container_name: chromium_browser_8
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - CUSTOM_USER=${custom_user}
+      - PASSWORD=${password}
+      - CHROME_CLI=https://www.google.com
+    ports:
+      - "3064:3000"
+      - "3065:3001"
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ~/chromium/config_8:/config
+    shm_size: "1gb"
+    restart: unless-stopped
