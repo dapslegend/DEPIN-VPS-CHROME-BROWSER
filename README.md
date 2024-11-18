@@ -18,8 +18,27 @@ git clone https://github.com/dapslegend/DEPIN-VPS-CHROME-BROWSER.git
 
 docker-compose up -d
 
+Visit <ip-address>:port and access chrome 
+
 **#To view Memory Usage**
 
 docker ps or  docker stats
+
+**#WARNING** **#WARNING** **#WARNING** **#WARNING** **#WARNING** **#WARNING** **#WARNING**
+
+ If your VPS is less than 8GB Ram, edit docker-compose.yml and reduce the Instance created 
+ 
+ Default is 8.
+
+**#Supports**
+
+app.nodepay.ai/dashboard
+app.gradient.network/dashboard
+Dawn
+dashboard.oasis.ai/provider/statistics
+node.securitylabs.xyz functor network 
+bless.network/dashboard
+app.aigaea.net/dashboard
+app.blockmesh.xyz/ui/dashboard
 
 
