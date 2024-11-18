@@ -14,11 +14,15 @@ git clone https://github.com/dapslegend/DEPIN-VPS-CHROME-BROWSER.git
 
 **#EDIT .env With your Username And Password**
 
-**Navigate to Folder Director **
+**#Navigate to Folder Director and run**
 
 docker-compose up -d
 
-Visit <ip-address>:port and access chrome 
+**#OPEN BROWSER**
+
+Visit ip-address:port
+
+You can view docker-compose.yml for all ports used
 
 **#To view Memory Usage**
 
